@@ -12,7 +12,6 @@ public class WebhookController {
 	@PostMapping("/Webhook")
 	public void handleWebhook(@RequestBody String jsonData) {
 		System.out.println(jsonData);
-
 	}
 
 }

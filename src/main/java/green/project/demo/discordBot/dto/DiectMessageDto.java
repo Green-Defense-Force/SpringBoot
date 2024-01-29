@@ -18,5 +18,4 @@ public class DiectMessageDto {
 	String message;
 
 	String link;
-
 }

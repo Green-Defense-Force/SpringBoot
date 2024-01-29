@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -19,7 +20,7 @@ public class ChallengeController {
 	}
 
 	@PostMapping("/Challenge")
-	public ResponseEntity<?> ChallengePost(String example) {
+	public ResponseEntity<?> ChallengePost(@RequestBody String example) {
 		System.out.println(example);
 
 		return null;
@@ -27,7 +28,6 @@ public class ChallengeController {
 	@PutMapping("/Challenge")
 	public ResponseEntity<?> ChallengePut(String example) {
 		System.out.println(example);
-
 		return null;
 	}
 	@DeleteMapping("/Challengee")
